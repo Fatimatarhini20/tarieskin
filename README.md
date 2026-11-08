@@ -10,9 +10,9 @@ Almindelig HTML og CSS. Ingen build, ingen frameworks. Åbn `index.html` i en br
 | `behandlinger.html` | Alle 10 behandlinger i 3 kategorier |
 | `om-mig.html` | Om mig og min baggrund, Min vision |
 | `style.css` | Al styling, delt af alle sider |
-| `logo-champagne.png`, `logo-light.png` | Logoer |
+| `assets/` | Logoer (`logo-champagne.png`, `logo-light.png`) |
 | `CNAME` | Domænet `www.tarieskin.dk` (GitHub Pages) – må ikke slettes |
-| `Main.dc.html`, `react*.js`, `support.js`, to `.png` med lange navne | Gammelt designudkast. Bruges ikke af siden og kan slettes |
+| `arkiv-design-udkast/` | Det gamle designudkast. Bruges ikke af siden |
 
 ## Til udviklere: layout på mobil, tablet og pc
 
