@@ -1,29 +1,34 @@
-# Forside — design reference
+# Tarieskin – hjemmeside
 
-This is a design mockup created in a visual design tool, exported as a
-standalone page. Treat it as a REFERENCE MOCKUP, not production code:
-the markup and inline styles carry the design's precise values — colors,
-font sizes, spacing, radii, shadows, layout — which an implementation
-should replicate faithfully in its own components and styling system
-rather than copy wholesale.
+Almindelig HTML og CSS. Ingen build, ingen frameworks. Åbn `index.html` i en browser for at se siden.
 
-## Contents
+## Filer
 
-- `Main.dc.html` — the artboard (a Design Component: an `<x-dc>`
-  template + a small logic class). The values to replicate live in its
-  inline `style="…"` attributes and the `<helmet><style>` block.
-- `assets/` — files uploaded to the design (images, fonts, media)
-- `support.js`, `vendor/react*.js` — the runtime that renders the
-  component in a browser; not part of the design.
+| Fil | Indhold |
+| --- | --- |
+| `index.html` | Forside: hero, behandlingskort, priser, kontakt |
+| `behandlinger.html` | Alle 10 behandlinger i 3 kategorier |
+| `om-mig.html` | Om mig og min baggrund, Min vision |
+| `style.css` | Al styling, delt af alle sider |
+| `logo-champagne.png`, `logo-light.png` | Logoer |
+| `CNAME` | Domænet `www.tarieskin.dk` (GitHub Pages) – må ikke slettes |
+| `Main.dc.html`, `react*.js`, `support.js`, to `.png` med lange navne | Gammelt designudkast. Bruges ikke af siden og kan slettes |
 
-## Uploaded files
+## Til udviklere: layout på mobil, tablet og pc
 
-Images, fonts and media uploaded to the design are written once each under
-`assets/` — 2 in this export — and the exported files refer to them there. A
-reference a script puts together while the page runs (for example
-`"/_blob/" + id`) is not rewritten and does not load from this folder.
+- Farver, skrifttyper og sidebredde ligger som variabler øverst i `style.css` (`:root`).
+- Layoutet bruger flex og grid med `flex-wrap`, så kolonner brydes af sig selv på smalle skærme.
+- Der er ét breakpoint til mobil: `@media (max-width: 600px)` nederst i `style.css`. Tilføj flere der, hvis tablet skal justeres.
+- Skrifter: Cormorant Garamond og DM Sans fra Google Fonts.
 
-## Viewing
+## Indhold der skal opdateres
 
-Serve the folder (e.g. `python3 -m http.server`) and open `Main.dc.html`;
-some browsers block the scripts over file://.
+- Booking: alle "Book tid"-knapper peger på https://tarieskin.planway.com/ og åbner i ny fane.
+- Priser: står både i `index.html` (prislisten) og `behandlinger.html`. Ret begge steder.
+- Åbningstider og kontaktoplysninger: nederst på hver side (sektionen `#kontakt`).
+- Billeder: der er endnu ingen fotos. Se kommentarerne i HTML-filerne for hvor et foto kan sættes ind i stedet for ikon/logo (`assets/foto.jpg`).
+- Facebook-linket (`facebook.com/tarieskin`) er et gæt og skal tjekkes.
+
+## Udgivelse
+
+Siden udgives med GitHub Pages: Settings → Pages → Deploy from a branch → `main` / `(root)`.

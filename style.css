@@ -369,6 +369,26 @@ em.accent { font-style: italic; color: var(--accent); }
 }
 .site-footer__brand img { height: 36px; width: auto; display: block; }
 
+/* ---------- Små dele der bruges flere steder ---------- */
+
+.dot--sm { width: 6px; height: 6px; }
+.list { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 8px; font-size: 16px; line-height: 1.5; }
+.list li { display: flex; gap: 12px; align-items: baseline; }
+.list--grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 180px), 1fr)); gap: 8px 24px; font-size: 17px; color: var(--muted); }
+.label { font-size: 13px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: var(--accent); }
+.text--italic { font-style: italic; }
+.lead--big { font-size: 22px; line-height: 1.55; max-width: 560px; }
+
+.price-cat { margin: 0 0 4px; font-size: 13px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: var(--accent); }
+.price-cat--next { margin-top: 40px; }
+
+.details a { color: var(--on-dark); text-decoration: none; overflow-wrap: anywhere; }
+.hours { display: flex; flex-direction: column; gap: 6px; font-size: 17px; font-variant-numeric: tabular-nums; max-width: 340px; }
+.hours div { display: flex; justify-content: space-between; gap: 24px; }
+.hours .is-closed { color: var(--on-dark-label); }
+.social { display: flex; flex-wrap: wrap; gap: 12px 28px; }
+.social a { display: inline-flex; align-items: center; gap: 12px; }
+
 /* ---------- Undersiden Behandlinger ---------- */
 
 .page-intro {
@@ -384,15 +404,44 @@ em.accent { font-style: italic; color: var(--accent); }
 .page-intro .lead { max-width: 620px; }
 .page-intro__links { display: flex; flex-wrap: wrap; gap: 12px; }
 
-.treatment { padding: 64px 0; }
-.treatment--tint { background: var(--blush-soft); }
-.treatment__inner { display: flex; flex-wrap: wrap; align-items: center; gap: 48px 80px; }
-.treatment--reverse .treatment__inner { flex-direction: row-reverse; flex-wrap: wrap-reverse; }
+.category { padding: 64px 0 24px; }
+.category--tint { background: var(--blush-soft); padding: 72px 0 32px; margin-top: 40px; }
+.category__inner { display: flex; flex-direction: column; gap: 40px; }
+.category .section-head { gap: 14px; }
+.menu { display: flex; flex-direction: column; }
 
-.treatment__visual { flex: 1 1 340px; min-width: 0; display: flex; justify-content: center; }
+.menu-item {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px 64px;
+  padding: 40px 0;
+  border-top: 1px solid var(--line);
+}
+.menu-item__head { flex: 1 1 280px; min-width: 0; display: flex; flex-direction: column; align-items: flex-start; gap: 16px; }
+.menu-item__head h3 { font-size: 40px; }
+.menu-item__meta { display: flex; flex-wrap: wrap; gap: 6px 24px; align-items: baseline; font-size: 20px; font-weight: 700; font-variant-numeric: tabular-nums; }
+.menu-item__body { flex: 2 1 420px; min-width: 0; display: flex; flex-direction: column; gap: 18px; }
+.detail { display: flex; flex-direction: column; gap: 8px; }
+.detail p { font-size: 17px; line-height: 1.6; color: var(--muted); }
+.detail .list { font-size: 17px; color: var(--muted); }
+
+/* ---------- Undersiden Om mig ---------- */
+
+.about-intro {
+  max-width: var(--page-width);
+  margin: 0 auto;
+  padding: 56px var(--gutter) 88px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 56px;
+}
+.about-intro__text { flex: 1 1 420px; min-width: 0; display: flex; flex-direction: column; align-items: flex-start; gap: 28px; }
+.about-intro__art { flex: 1 1 320px; min-width: 0; display: flex; justify-content: center; }
+
 .frame {
   position: relative;
-  width: 400px;
+  width: 360px;
   max-width: 100%;
   height: 480px;
   background: linear-gradient(180deg, #F8EBE2, #EBD2BC);
@@ -401,8 +450,6 @@ em.accent { font-style: italic; color: var(--accent); }
   align-items: center;
   justify-content: center;
 }
-.frame--rose { background: linear-gradient(180deg, #F6E2D3, #E6C6AA); }
-.frame--sand { background: linear-gradient(180deg, #F4E3D8, #E8D0BF); }
 .frame::before {
   content: "";
   position: absolute;
@@ -410,27 +457,34 @@ em.accent { font-style: italic; color: var(--accent); }
   border: 1.5px solid rgba(201, 170, 134, 0.85);
   border-radius: 999px 999px 16px 16px;
 }
-.frame svg { position: relative; }
-/* Foto i rammen: <div class="frame"><img src="assets/foto.jpg" alt="..."></div> */
-.frame img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; border-radius: inherit; }
+.frame__logo { position: relative; height: 42%; max-width: 56%; width: auto; object-fit: contain; }
+/* Portrætfoto: <img class="frame__photo" src="assets/fatima.jpg" alt="..."> */
+.frame__photo { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; border-radius: inherit; }
 
-.treatment__text { flex: 1 1 400px; min-width: 0; display: flex; flex-direction: column; align-items: flex-start; gap: 22px; }
+.about-body { padding-top: 24px; padding-bottom: 104px; display: flex; flex-wrap: wrap; gap: 48px 80px; }
+.facts-list { flex: 1 1 280px; min-width: 0; margin: 0; align-self: flex-start; }
+.facts-list div { padding: 22px 0; border-top: 1px solid var(--line); }
+.facts-list div:last-child { border-bottom: 1px solid var(--line); }
+.facts-list dt { font-size: 13px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: var(--accent); }
+.facts-list dd { margin: 8px 0 0; font-family: var(--font-display); font-size: 28px; font-weight: 600; line-height: 1.15; }
+.about-body__text { flex: 2 1 460px; min-width: 0; max-width: 680px; display: flex; flex-direction: column; gap: 24px; }
+.about-body__text p { font-size: 19px; line-height: 1.7; color: var(--muted); }
 
-.checks { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 12px; font-size: 17px; line-height: 1.55; color: var(--muted); }
-.checks li { display: flex; gap: 14px; align-items: baseline; }
-
-.facts {
-  align-self: stretch;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px 48px;
-  padding: 20px 0;
+.vision { background: var(--blush-soft); padding: 104px 0; }
+.vision__inner { display: flex; flex-direction: column; gap: 56px; }
+.vision__head { display: flex; flex-direction: column; align-items: flex-start; gap: 24px; max-width: 900px; }
+.vision__head h2 { line-height: 1.05; }
+.vision__cols { display: flex; flex-wrap: wrap; gap: 32px 64px; }
+.vision__cols p { flex: 1 1 340px; min-width: 0; font-size: 18px; line-height: 1.7; color: var(--muted); }
+.vision__goal {
+  max-width: 900px;
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: clamp(26px, 3vw, 34px);
+  line-height: 1.25;
+  padding-top: 40px;
   border-top: 1px solid var(--line);
-  border-bottom: 1px solid var(--line);
 }
-.facts div { display: flex; flex-direction: column; gap: 4px; }
-.facts dt { font-size: 13px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: var(--accent); }
-.facts dd { margin: 0; font-size: 22px; font-weight: 700; font-variant-numeric: tabular-nums; }
 
 /* ---------- Mobil ---------- */
 
@@ -446,6 +500,10 @@ em.accent { font-style: italic; color: var(--accent); }
   .contact__box { padding: 48px 28px; border-radius: 32px; }
   .band__inner { font-size: 24px; }
   .frame { height: 420px; }
+  .menu-item { padding: 32px 0; }
+  .menu-item__head h3 { font-size: 34px; }
+  .vision { padding: 72px 0; }
+  .about-body { padding-bottom: 72px; }
   .price-row__title { font-size: 26px; }
 }
 
