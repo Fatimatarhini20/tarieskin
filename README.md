@@ -1,2 +1,0 @@
-# tarieskin
-Hudklinik og skønhedsklinik
