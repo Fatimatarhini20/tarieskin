@@ -24,7 +24,7 @@ Almindelig HTML og CSS. Ingen build, ingen frameworks. Åbn `index.html` i en br
 ## Indhold der skal opdateres
 
 - Booking: alle "Book tid"-knapper peger på https://tarieskin.planway.com/ og åbner i ny fane.
-- Priser: står både i `index.html` (prislisten) og `behandlinger.html`. Ret begge steder.
+- Priser: vises som "Fra"-priser (vejledende; præcis pris fremgår i bookingen). De står både i `index.html` (prislisten) og `behandlinger.html`. Ret begge steder.
 - Åbningstider og kontaktoplysninger: nederst på hver side (sektionen `#kontakt`).
 - Billeder: der er endnu ingen fotos. Se kommentarerne i HTML-filerne for hvor et foto kan sættes ind i stedet for ikon/logo (`assets/foto.jpg`).
 - Facebook-linket (`facebook.com/tarieskin`) er et gæt og skal tjekkes.
