@@ -487,6 +487,9 @@ em.accent { font-style: italic; color: var(--accent); }
 }
 
 
+.name-en { display: block; margin-top: 8px; font-family: var(--font-body); font-size: 15px; font-weight: 500; font-style: italic; letter-spacing: 0.02em; color: var(--accent); }
+.name-en-inline { color: var(--accent); font-size: 14px; }
+
 /* ---------- Billeder under behandlinger ---------- */
 
 .media {
