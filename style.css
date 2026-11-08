@@ -509,9 +509,6 @@ em.accent { font-style: italic; color: var(--accent); }
 .media > img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1; }
 
 
-/* Fade-ind ved scroll (kun når JavaScript kører) */
-.js-reveal [data-reveal] { opacity: 0; transform: translateY(24px); transition: opacity 0.9s ease, transform 0.9s ease; }
-.js-reveal [data-reveal].is-visible { opacity: 1; transform: none; }
 
 /* ---------- Mobil ---------- */
 
@@ -537,4 +534,4 @@ em.accent { font-style: italic; color: var(--accent); }
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
-  .media, .media__icon, }
+}
