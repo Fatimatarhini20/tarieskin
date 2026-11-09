@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<title>Tarieskin forside</title>
+<script src="./vendor/react.js"></script>
+<script src="./vendor/react-dom.js"></script>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&amp;family=DM+Sans:wght@400;500;700&amp;display=swap">
+<style>
+body{margin:0;font-family:'DM Sans',system-ui,sans-serif;color:#3A2B25;background:#FBF7F3}
+a{color:#3A2B25}a:hover{color:#7A5A3C}
+a:focus-visible{outline:3px solid #3A2B25;outline-offset:3px}
+h1,h2,h3{font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;text-wrap:balance}
+</style>
+</helmet>
+
+<div style="width:100%;box-sizing:border-box;background:#FBF7F3">
+
+<!-- Header -->
+<header style="max-width:1200px;margin:0 auto;box-sizing:border-box;padding:20px 24px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px 32px">
+<a href="#top" style="display:flex;align-items:center;gap:16px;text-decoration:none;color:#3A2B25">
+<img src="./assets/1825b0a2f6b71826dc1a18c010e736a8.png" alt="Tarieskin logo" style="height:54px;width:auto;display:block">
+<span style="font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;font-size:24px;letter-spacing:0.28em;text-transform:uppercase">Tarieskin</span>
+</a>
+<nav style="display:flex;flex-wrap:wrap;align-items:center;gap:4px 30px;font-size:16px;font-weight:500">
+<a href="Behandlinger.dc.html" style="text-decoration:none;padding:12px 0">Behandlinger</a>
+<a href="#priser" style="text-decoration:none;padding:12px 0">Priser</a>
+<a href="#kontakt" style="text-decoration:none;padding:12px 0">Kontakt</a>
+<a href="https://tarieskin.planway.com/" style="text-decoration:none;background:#3A2B25;color:#FFFFFF;padding:13px 26px;border-radius:999px;font-weight:700">Book tid</a>
+</nav>
+</header>
+
+<!-- Hero -->
+<section id="top" style="max-width: 1200px; margin: 0 auto; box-sizing: border-box; padding: 48px 24px 96px; display: flex; flex-wrap: wrap; align-items: center; gap: 56px; border-style: solid; border-width: 1px; border-color: #141413">
+<div style="flex:1 1 420px;min-width:0;display:flex;flex-direction:column;gap:28px">
+<p style="margin:0;font-size:14px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:#7A5A3C">Skønhedsklinik</p>
+<h1 style="margin:0;font-size:84px;line-height:0.98;letter-spacing:-0.01em">Skønhed, der starter med <em style="font-style:italic;color:#7A5A3C">skøn hud</em></h1>
+<p style="margin:0;font-size:20px;line-height:1.6;color:#6A5448;max-width:500px">Ansigtsbehandlinger, microneedling, red light-terapi og lash lift i bløde, rolige rammer. Alt tilpasset dig og din hud.</p>
+<div style="display:flex;flex-wrap:wrap;gap:12px 24px;align-items:center">
+<a href="https://tarieskin.planway.com/" style="text-decoration:none;background:#3A2B25;color:#FFFFFF;padding:18px 34px;border-radius:999px;font-size:18px;font-weight:700">Book tid</a>
+<a href="#behandlinger" style="text-decoration:none;padding:16px 4px;font-size:18px;font-weight:700;border-bottom:2px solid #C9AA86">Se behandlinger</a>
+</div>
+</div>
+
+<div style="flex:1 1 360px;min-width:0;display:flex;justify-content:center">
+<div style="position:relative;width:420px;max-width:100%;height:560px">
+<svg aria-hidden="true" viewBox="0 0 420 560" preserveAspectRatio="xMidYMax meet" style="position:absolute;left:0;top:0;width:100%;height:100%">
+<defs>
+<linearGradient id="archFill" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F8EBE2"></stop><stop offset="1" stop-color="#EBD2BC"></stop></linearGradient>
+<radialGradient id="archGlow" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#FFFFFF" stop-opacity="0.95"></stop><stop offset="1" stop-color="#FFFFFF" stop-opacity="0"></stop></radialGradient>
+</defs>
+<path d="M0 560V210A210 210 0 0 1 420 210V560Z" fill="url(#archFill)"></path>
+<ellipse cx="210" cy="340" rx="170" ry="190" fill="url(#archGlow)"></ellipse>
+<path d="M22 560V210A188 188 0 0 1 398 210V560" fill="none" stroke="#C9AA86" stroke-opacity="0.8" stroke-width="1.5"></path>
+<path d="M44 560V210A166 166 0 0 1 376 210V560" fill="none" stroke="#C9AA86" stroke-opacity="0.5" stroke-width="1.5"></path>
+<path d="M66 560V210A144 144 0 0 1 354 210V560" fill="none" stroke="#C9AA86" stroke-opacity="0.3" stroke-width="1.5"></path>
+<path d="M96 104Q98 124 118 126Q98 128 96 148Q94 128 74 126Q94 124 96 104Z" fill="#C9AA86"></path>
+<path d="M330 78Q331 92 345 93Q331 94 330 108Q329 94 315 93Q329 92 330 78Z" fill="#C9AA86" fill-opacity="0.8"></path>
+<path d="M352 290Q353 300 363 301Q353 302 352 312Q351 302 341 301Q351 300 352 290Z" fill="#C9AA86" fill-opacity="0.7"></path>
+</svg>
+<div style="position:absolute;left:0;top:0;width:100%;height:100%;box-sizing:border-box;display:flex;align-items:center;justify-content:center;padding-top:110px">
+<img src="./assets/1825b0a2f6b71826dc1a18c010e736a8.png" alt="Tarieskin monogram" style="height:44%;max-width:60%;width:auto;object-fit:contain">
+</div>
+<div style="position:absolute;right:4%;bottom:6%;width:92px;height:92px;border-radius:50%;background:#C9AA86;display:flex;align-items:center;justify-content:center;text-align:center;font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;font-size:20px;line-height:1.05;color:#2E211B">Ro til<br>huden</div>
+</div>
+</div>
+</section>
+
+<!-- Services band -->
+<section style="background:#F1DFD3;padding:28px 24px">
+<div style="max-width:1200px;margin:0 auto;display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:10px 40px;font-family:'Cormorant Garamond',Georgia,serif;font-size:28px;font-weight:600;color:#3A2B25;text-align:center">
+<span>Ansigtsbehandlinger</span>
+<span aria-hidden="true" style="width:7px;height:7px;border-radius:50%;background:#C9AA86"></span>
+<span>Avanceret hudpleje</span>
+<span aria-hidden="true" style="width:7px;height:7px;border-radius:50%;background:#C9AA86"></span>
+<span>Vipper &amp; bryn</span>
+</div>
+</section>
+
+<!-- Treatments -->
+<section id="behandlinger" style="max-width:1200px;margin:0 auto;box-sizing:border-box;padding:104px 24px 96px;display:flex;flex-direction:column;gap:56px">
+<div style="display:flex;flex-direction:column;gap:16px;max-width:620px">
+<p style="margin:0;font-size:14px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:#7A5A3C">Behandlinger</p>
+<h2 style="margin:0;font-size:56px;line-height:1.02;letter-spacing:-0.01em">Find den behandling, der passer til din hud</h2>
+<p style="margin:0;font-size:18px;line-height:1.65;color:#6A5448">Vi finder sammen ud af, hvad der passer til dig og din hud.</p>
+<a href="Behandlinger.dc.html" style="align-self:flex-start;font-weight:700;text-decoration:none;border-bottom:2px solid #C9AA86;padding:6px 0">Læs mere om behandlingerne</a>
+</div>
+
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:28px">
+
+<article style="background:#FFFFFF;border:1px solid #E8D8C8;border-radius:28px;overflow:hidden;display:flex;flex-direction:column;min-width:0">
+<div style="margin:20px 20px 0;height:170px;background:#F1DFD3;border-radius:999px 999px 0 0;display:flex;align-items:center;justify-content:center">
+<svg aria-hidden="true" width="56" height="56" viewBox="0 0 44 44" fill="none" stroke="#3A2B25" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 6c7 8 10 13 10 19a10 10 0 0 1-20 0c0-6 3-11 10-19z"></path><path d="M17 27a5 5 0 0 0 5 5"></path></svg>
+</div>
+<div style="padding:28px 32px 34px;display:flex;flex-direction:column;gap:14px;flex:1">
+<h3 style="margin:0;font-size:34px;line-height:1.05">Ansigtsbehandlinger</h3>
+<p style="margin:0;font-size:17px;line-height:1.65;color:#6A5448">Rensende og plejende behandlinger, der tilpasses din hudtype og hudens behov.</p>
+<ul style="margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:8px;font-size:16px;line-height:1.5;color:#3A2B25">
+<li style="display:flex;gap:12px;align-items:baseline"><span aria-hidden="true" style="flex:none;width:6px;height:6px;border-radius:50%;background:#C9AA86"></span><span>Classic Facial Treatment</span></li>
+<li style="display:flex;gap:12px;align-items:baseline"><span aria-hidden="true" style="flex:none;width:6px;height:6px;border-radius:50%;background:#C9AA86"></span><span>Calm &amp; Restore Facial</span></li>
+<li style="display:flex;gap:12px;align-items:baseline"><span aria-hidden="true" style="flex:none;width:6px;height:6px;border-radius:50%;background:#C9AA86"></span><span>All Inclusive Facial</span></li>
+<li style="display:flex;gap:12px;align-items:baseline"><span aria-hidden="true" style="flex:none;width:6px;height:6px;border-radius:50%;background:#C9AA86"></span><span>Deep Cleansing Facial</span></li>
+</ul>
+<a href="Behandlinger.dc.html" style="margin-top:auto;padding-top:8px;font-weight:700;text-decoration:none;border-bottom:2px solid #C9AA86;align-self:flex-start">Se ansigtsbehandlinger</a>
+</div>
+</article>
+
+<article style="background:#FFFFFF;border:1px solid #E8D8C8;border-radius:28px;overflow:hidden;display:flex;flex-direction:column;min-width:0">
+<div style="margin:20px 20px 0;height:170px;background:#EAD3BE;border-radius:999px 999px 0 0;display:flex;align-items:center;justify-content:center">
+<svg aria-hidden="true" width="56" height="56" viewBox="0 0 44 44" fill="none" stroke="#3A2B25" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 6Q23 19 36 22Q23 25 22 38Q21 25 8 22Q21 19 22 6Z"></path></svg>
+</div>
+<div style="padding:28px 32px 34px;display:flex;flex-direction:column;gap:14px;flex:1">
+<h3 style="margin:0;font-size:34px;line-height:1.05">Avanceret hudpleje</h3>
+<p style="margin:0;font-size:17px;line-height:1.65;color:#6A5448">Behandlinger, der forbedrer hudens struktur og giver en friskere og mere glødende hud.</p>
+<ul style="margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:8px;font-size:16px;line-height:1.5;color:#3A2B25">
+<li style="display:flex;gap:12px;align-items:baseline"><span aria-hidden="true" style="flex:none;width:6px;height:6px;border-radius:50%;background:#C9AA86"></span><span>Microneedling</span></li>
+<li style="display:flex;gap:12px;align-items:baseline"><span aria-hidden="true" style="flex:none;width:6px;height:6px;border-radius:50%;background:#C9AA86"></span><span>Diamond Mikrodermabrasion</span></li>
+<li style="display:flex;gap:12px;align-items:baseline"><span aria-hidden="true" style="flex:none;width:6px;height:6px;border-radius:50%;background:#C9AA86"></span><span>LED Red Light Therapy Facial</span></li>
+</ul>
+<a href="Behandlinger.dc.html" style="margin-top:auto;padding-top:8px;font-weight:700;text-decoration:none;border-bottom:2px solid #C9AA86;align-self:flex-start">Se avanceret hudpleje</a>
+</div>
+</article>
+
+<article style="background:#FFFFFF;border:1px solid #E8D8C8;border-radius:28px;overflow:hidden;display:flex;flex-direction:column;min-width:0">
+<div style="margin:20px 20px 0;height:170px;background:#F1DFD3;border-radius:999px 999px 0 0;display:flex;align-items:center;justify-content:center">
+<svg aria-hidden="true" width="56" height="56" viewBox="0 0 44 44" fill="none" stroke="#3A2B25" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 26c5-8 11-11 16-11s11 3 16 11"></path><path d="M12 22l-3-7M22 15V7M32 22l3-7"></path></svg>
+</div>
+<div style="padding:28px 32px 34px;display:flex;flex-direction:column;gap:14px;flex:1">
+<h3 style="margin:0;font-size:34px;line-height:1.05">Vipper &amp; bryn</h3>
+<p style="margin:0;font-size:17px;line-height:1.65;color:#6A5448">Løft og farvning, der giver et mere åbent og markeret blik.</p>
+<ul style="margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:8px;font-size:16px;line-height:1.5;color:#3A2B25">
+<li style="display:flex;gap:12px;align-items:baseline"><span aria-hidden="true" style="flex:none;width:6px;height:6px;border-radius:50%;background:#C9AA86"></span><span>Lash Lift &amp; Tint</span></li>
+<li style="display:flex;gap:12px;align-items:baseline"><span aria-hidden="true" style="flex:none;width:6px;height:6px;border-radius:50%;background:#C9AA86"></span><span>Vippefarvning</span></li>
+<li style="display:flex;gap:12px;align-items:baseline"><span aria-hidden="true" style="flex:none;width:6px;height:6px;border-radius:50%;background:#C9AA86"></span><span>Brynfarvning</span></li>
+</ul>
+<a href="Behandlinger.dc.html" style="margin-top:auto;padding-top:8px;font-weight:700;text-decoration:none;border-bottom:2px solid #C9AA86;align-self:flex-start">Se vipper &amp; bryn</a>
+</div>
+</article>
+
+</div>
+</section>
+
+<!-- Prices -->
+<section id="priser" style="background:#F6EDE6;padding:96px 0">
+<div style="max-width:1200px;margin:0 auto;box-sizing:border-box;padding:0 24px;display:flex;flex-wrap:wrap;gap:48px 80px">
+<div style="flex:1 1 300px;min-width:0;display:flex;flex-direction:column;gap:16px">
+<p style="margin:0;font-size:14px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:#7A5A3C">Priser</p>
+<h2 style="margin:0;font-size:56px;line-height:1.02;letter-spacing:-0.01em">Priser og tid</h2>
+<p style="margin:0;font-size:18px;line-height:1.65;color:#6A5448">Pris og varighed for alle vores behandlinger.</p>
+</div>
+<div style="flex:2 1 460px;min-width:0;display:flex;flex-direction:column">
+
+<p style="margin:0 0 4px;font-size:13px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:#7A5A3C">Ansigtsbehandlinger</p>
+<div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:8px 24px;padding:22px 0;border-bottom:1px solid #D9C2AB">
+<div style="display:flex;flex-direction:column;gap:4px"><span style="font-size:28px;font-weight:600;font-family:'Cormorant Garamond',Georgia,serif;line-height:1.1">Classic Facial Treatment</span><span style="font-size:16px;color:#6A5448">70 min</span></div>
+<span style="font-size:22px;font-weight:700;font-variant-numeric:tabular-nums">565 kr.</span>
+</div>
+<div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:8px 24px;padding:22px 0;border-bottom:1px solid #D9C2AB">
+<div style="display:flex;flex-direction:column;gap:4px"><span style="font-size:28px;font-weight:600;font-family:'Cormorant Garamond',Georgia,serif;line-height:1.1">Calm &amp; Restore Facial</span><span style="font-size:16px;color:#6A5448">60 min</span></div>
+<span style="font-size:22px;font-weight:700;font-variant-numeric:tabular-nums">475 kr.</span>
+</div>
+<div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:8px 24px;padding:22px 0;border-bottom:1px solid #D9C2AB">
+<div style="display:flex;flex-direction:column;gap:4px"><span style="font-size:28px;font-weight:600;font-family:'Cormorant Garamond',Georgia,serif;line-height:1.1">All Inclusive Facial</span><span style="font-size:16px;color:#6A5448">120 min</span></div>
+<span style="font-size:22px;font-weight:700;font-variant-numeric:tabular-nums">765 kr.</span>
+</div>
+<div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:8px 24px;padding:22px 0;border-bottom:1px solid #D9C2AB">
+<div style="display:flex;flex-direction:column;gap:4px"><span style="font-size:28px;font-weight:600;font-family:'Cormorant Garamond',Georgia,serif;line-height:1.1">Deep Cleansing Facial</span><span style="font-size:16px;color:#6A5448">90 min</span></div>
+<span style="font-size:22px;font-weight:700;font-variant-numeric:tabular-nums">525 kr.</span>
+</div>
+
+<p style="margin:40px 0 4px;font-size:13px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:#7A5A3C">Avanceret hudpleje</p>
+<div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:8px 24px;padding:22px 0;border-bottom:1px solid #D9C2AB">
+<div style="display:flex;flex-direction:column;gap:4px"><span style="font-size:28px;font-weight:600;font-family:'Cormorant Garamond',Georgia,serif;line-height:1.1">Microneedling</span><span style="font-size:16px;color:#6A5448">60 min</span></div>
+<span style="font-size:22px;font-weight:700;font-variant-numeric:tabular-nums">680 kr.</span>
+</div>
+<div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:8px 24px;padding:22px 0;border-bottom:1px solid #D9C2AB">
+<div style="display:flex;flex-direction:column;gap:4px"><span style="font-size:28px;font-weight:600;font-family:'Cormorant Garamond',Georgia,serif;line-height:1.1">Diamond Mikrodermabrasion</span><span style="font-size:16px;color:#6A5448">50 min</span></div>
+<span style="font-size:22px;font-weight:700;font-variant-numeric:tabular-nums">485 kr.</span>
+</div>
+<div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:8px 24px;padding:22px 0;border-bottom:1px solid #D9C2AB">
+<div style="display:flex;flex-direction:column;gap:4px"><span style="font-size:28px;font-weight:600;font-family:'Cormorant Garamond',Georgia,serif;line-height:1.1">LED Red Light Therapy Facial</span><span style="font-size:16px;color:#6A5448">40 min</span></div>
+<span style="font-size:22px;font-weight:700;font-variant-numeric:tabular-nums">395 kr.</span>
+</div>
+
+<p style="margin:40px 0 4px;font-size:13px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:#7A5A3C">Vipper &amp; bryn</p>
+<div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:8px 24px;padding:22px 0;border-bottom:1px solid #D9C2AB">
+<div style="display:flex;flex-direction:column;gap:4px"><span style="font-size:28px;font-weight:600;font-family:'Cormorant Garamond',Georgia,serif;line-height:1.1">Lash Lift &amp; Tint</span><span style="font-size:16px;color:#6A5448">90 min</span></div>
+<span style="font-size:22px;font-weight:700;font-variant-numeric:tabular-nums">425 kr.</span>
+</div>
+<div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:8px 24px;padding:22px 0;border-bottom:1px solid #D9C2AB">
+<div style="display:flex;flex-direction:column;gap:4px"><span style="font-size:28px;font-weight:600;font-family:'Cormorant Garamond',Georgia,serif;line-height:1.1">Vippefarvning</span><span style="font-size:16px;color:#6A5448">40 min</span></div>
+<span style="font-size:22px;font-weight:700;font-variant-numeric:tabular-nums">165 kr.</span>
+</div>
+<div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:8px 24px;padding:22px 0;border-bottom:1px solid #D9C2AB">
+<div style="display:flex;flex-direction:column;gap:4px"><span style="font-size:28px;font-weight:600;font-family:'Cormorant Garamond',Georgia,serif;line-height:1.1">Brynfarvning</span><span style="font-size:16px;color:#6A5448">45 min</span></div>
+<span style="font-size:22px;font-weight:700;font-variant-numeric:tabular-nums">165 kr.</span>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- Booking / contact -->
+<section id="kontakt" style="max-width:1200px;margin:0 auto;box-sizing:border-box;padding:96px 24px">
+<div style="background:#3A2B25;color:#FBF7F3;border-radius:40px;padding:72px 56px;display:flex;flex-wrap:wrap;gap:48px 72px;align-items:center">
+<div style="flex:1 1 320px;min-width:0;display:flex;flex-direction:column;gap:24px">
+<img src="./assets/71b9f03e33f2601ed4d987cafeba7377.png" alt="Tarieskin monogram" style="height:84px;width:auto;align-self:flex-start;display:block">
+<h2 style="margin:0;font-size:58px;line-height:1;letter-spacing:-0.01em;color:#FFFFFF">Book din tid hos Tarieskin</h2>
+<p style="margin:0;font-size:18px;line-height:1.65;color:#E8D5BF">Vælg din behandling og en tid, der passer dig. Har du spørgsmål først, er du velkommen til at kontakte os.</p>
+<div><a href="https://tarieskin.planway.com/" style="display:inline-block;text-decoration:none;background:#EEDDC9;color:#3A2B25;padding:18px 34px;border-radius:999px;font-size:18px;font-weight:700">Book tid</a></div>
+</div>
+<dl style="flex:1 1 280px;min-width:0;margin:0;display:flex;flex-direction:column;gap:26px;font-size:18px">
+<div><dt style="font-size:13px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:#E1C8AA">Adresse</dt><dd style="margin:8px 0 0">Strandby Have 41<br>2670 Greve</dd></div>
+<div><dt style="font-size:13px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:#E1C8AA">Telefon</dt><dd style="margin:8px 0 0">[TELEFONNUMMER]</dd></div>
+<div><dt style="font-size:13px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:#E1C8AA">Åbningstider</dt><dd style="margin:8px 0 0"><div style="display:flex;flex-direction:column;gap:6px;font-size:17px;font-variant-numeric:tabular-nums;max-width:340px">
+<div style="display:flex;justify-content:space-between;gap:24px"><span>Mandag</span><span>13.00 – 16.00</span></div>
+<div style="display:flex;justify-content:space-between;gap:24px"><span>Tirsdag</span><span>13.00 – 18.00</span></div>
+<div style="display:flex;justify-content:space-between;gap:24px"><span>Onsdag</span><span>10.00 – 16.00</span></div>
+<div style="display:flex;justify-content:space-between;gap:24px"><span>Torsdag</span><span>13.00 – 16.00</span></div>
+<div style="display:flex;justify-content:space-between;gap:24px"><span>Fredag</span><span>10.00 – 15.00</span></div>
+<div style="display:flex;justify-content:space-between;gap:24px;color:#E1C8AA"><span>Lørdag</span><span>Lukket</span></div>
+<div style="display:flex;justify-content:space-between;gap:24px;color:#E1C8AA"><span>Søndag</span><span>Lukket</span></div>
+</div></dd></div>
+<div><dt style="font-size:13px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:#E1C8AA">Instagram</dt><dd style="margin:8px 0 0"><a href="https://www.instagram.com/tarieskin/" style="display:inline-flex;align-items:center;gap:12px;color:#FBF7F3;text-decoration:none"><svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#FBF7F3" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4.2"></circle><circle cx="17.3" cy="6.7" r="0.6" fill="#FBF7F3"></circle></svg><span>@tarieskin</span></a></dd></div>
+</dl>
+</div>
+</section>
+
+<!-- Footer -->
+<footer style="max-width:1200px;margin:0 auto;box-sizing:border-box;padding:0 24px 48px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px 24px;font-size:15px;color:#6A5448">
+<span style="display:flex;align-items:center;gap:12px;font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;font-size:20px;letter-spacing:0.28em;text-transform:uppercase;color:#3A2B25">
+<img src="./assets/1825b0a2f6b71826dc1a18c010e736a8.png" alt="" style="height:36px;width:auto;display:block">Tarieskin</span>
+<span>© 2026 Tarieskin. Alle rettigheder forbeholdes.</span>
+</footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1360,"height":4200}}'>
+class Component extends DCLogic {
+renderVals() {
+return {};
+}
+}
+</script>
+</body>
+</html>
