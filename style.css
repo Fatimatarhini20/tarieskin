@@ -204,7 +204,7 @@ em.accent { font-style: italic; color: var(--accent); }
 .arch__logo img { height: 44%; max-width: 60%; width: auto; object-fit: contain; }
 .arch__badge {
   position: absolute;
-  right: 4%;
+  inset-inline-end: 4%;
   bottom: 6%;
   width: 92px;
   height: 92px;
@@ -549,7 +549,25 @@ em.accent { font-style: italic; color: var(--accent); }
 
 /* Behandlingsbeskrivelser: lister */
 .checklist { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 8px 24px; }
-.checklist li { position: relative; padding-left: 18px; font-size: 17px; line-height: 1.5; color: var(--muted); }
-.checklist li::before { content: ""; position: absolute; left: 0; top: 0.65em; width: 6px; height: 6px; border-radius: 50%; background: var(--gold); }
+.checklist li { position: relative; padding-inline-start: 18px; font-size: 17px; line-height: 1.5; color: var(--muted); }
+.checklist li::before { content: ""; position: absolute; inset-inline-start: 0; top: 0.65em; width: 6px; height: 6px; border-radius: 50%; background: var(--gold); }
 .detail .label { margin-bottom: 2px; }
-.note { font-size: 15px; line-height: 1.6; font-style: italic; color: var(--muted); border-left: 2px solid var(--gold); padding-left: 16px; }
+.note { font-size: 15px; line-height: 1.6; font-style: italic; color: var(--muted); border-inline-start: 2px solid var(--gold); padding-inline-start: 16px; }
+
+/* Sprogvælger */
+.nav { position: relative; }
+.lang { position: relative; font-size: 15px; font-weight: 700; }
+.lang summary { list-style: none; cursor: pointer; display: inline-flex; align-items: center; gap: 8px; padding: 10px 14px; border: 1px solid var(--gold); border-radius: 999px; color: var(--ink, inherit); user-select: none; }
+.lang summary::-webkit-details-marker { display: none; }
+.lang summary:hover { background: rgba(201, 170, 134, 0.18); }
+.lang summary:focus-visible { outline: 3px solid currentColor; outline-offset: 3px; }
+.lang ul { list-style: none; margin: 8px 0 0; padding: 8px; position: absolute; inset-inline-end: 0; top: 100%; z-index: 20; min-width: 160px; background: #FFFFFF; border: 1px solid var(--gold); border-radius: 18px; box-shadow: 0 18px 40px -18px rgba(58, 43, 37, 0.35); }
+.lang a { display: block; padding: 10px 14px; border-radius: 12px; text-decoration: none; font-weight: 500; }
+.lang a:hover { background: rgba(201, 170, 134, 0.18); }
+.lang a[aria-current="true"] { font-weight: 700; background: rgba(201, 170, 134, 0.28); }
+
+/* Arabisk (højre mod venstre) */
+html[lang="ar"] body, html[lang="ar"] h1, html[lang="ar"] h2, html[lang="ar"] h3, html[lang="ar"] .brand__name { font-family: 'Cairo', 'DM Sans', system-ui, sans-serif; }
+html[lang="ar"] h1, html[lang="ar"] h2, html[lang="ar"] h3 { font-weight: 600; letter-spacing: 0; }
+html[lang="ar"] .eyebrow, html[lang="ar"] .label, html[lang="ar"] dt { letter-spacing: 0; text-transform: none; }
+html[lang="ar"] .name-en, html[lang="ar"] .name-en-inline, html[lang="ar"] .price-row__time { font-style: normal; }

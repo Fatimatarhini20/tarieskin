@@ -32,3 +32,9 @@ Almindelig HTML og CSS. Ingen build, ingen frameworks. Åbn `index.html` i en br
 ## Udgivelse
 
 Siden udgives med GitHub Pages: Settings → Pages → Deploy from a branch → `main` / `(root)`.
+
+## Sprog
+Siden findes på dansk (rodmappen), engelsk (`en/`), svensk (`sv/`) og arabisk (`ar/`, højre mod venstre).
+Hver sprogmappe har de samme tre sider som dansk. Sprogvælgeren (globus i toppen) linker mellem dem.
+Ændrer du tekst eller pris på en dansk side, skal samme ændring laves i `en/`, `sv/` og `ar/`.
+De engelske, svenske og arabiske tekster er oversat af Claude og bør læses igennem af en, der kender sproget.
