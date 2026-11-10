@@ -3,15 +3,15 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Hudpleje og ansigtsbehandling i Greve | Tarieskin</title>
-<meta name="description" content="Tarieskin i Greve: ansigtsbehandlinger, microneedling, LED-lysbehandling og vipper & bryn ved autoriseret hudterapeut CIDESCO. Book tid online.">
+<title>Ansigtsbehandling og microneedling i Greve | Tarieskin</title>
+<meta name="description" content="Ansigtsbehandling, microneedling, LED-lys og vippeløft i Greve hos autoriseret CIDESCO-hudterapeut uddannet i Stockholm. Hudanalyse ved hver behandling. Book online.">
 <link rel="canonical" href="https://www.tarieskin.dk/">
 <meta name="robots" content="index, follow">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="da_DK">
 <meta property="og:site_name" content="Tarieskin">
-<meta property="og:title" content="Hudpleje og ansigtsbehandling i Greve | Tarieskin">
-<meta property="og:description" content="Tarieskin i Greve: ansigtsbehandlinger, microneedling, LED-lysbehandling og vipper & bryn ved autoriseret hudterapeut CIDESCO. Book tid online.">
+<meta property="og:title" content="Ansigtsbehandling og microneedling i Greve | Tarieskin">
+<meta property="og:description" content="Ansigtsbehandling, microneedling, LED-lys og vippeløft i Greve hos autoriseret CIDESCO-hudterapeut uddannet i Stockholm. Hudanalyse ved hver behandling. Book online.">
 <meta property="og:url" content="https://www.tarieskin.dk/">
 <meta property="og:image" content="https://www.tarieskin.dk/assets/logo-champagne.png">
 <meta name="twitter:card" content="summary">
@@ -29,12 +29,15 @@
 {
   "@context": "https://schema.org",
   "@type": "BeautySalon",
+  "@id": "https://www.tarieskin.dk/#klinik",
   "name": "Tarieskin",
   "url": "https://www.tarieskin.dk/",
   "image": "https://www.tarieskin.dk/assets/logo-champagne.png",
   "logo": "https://www.tarieskin.dk/assets/logo-champagne.png",
-  "description": "Skønhedsklinik i Greve med ansigtsbehandlinger, microneedling, LED-lysbehandling samt vippe- og brynbehandlinger.",
+  "description": "Hudplejeklinik i Greve med ansigtsbehandlinger, microneedling, diamantslibning, LED-lysbehandling samt vippe- og brynbehandlinger ved autoriseret CIDESCO-hudterapeut.",
   "email": "Fatima.tarhini@hotmail.com",
+  "priceRange": "165-765 DKK",
+  "areaServed": ["Greve", "Karlslunde", "Mosede", "Hundige", "Tune", "Solrød Strand"],
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "Strandby Have 41",
@@ -43,39 +46,32 @@
     "addressCountry": "DK"
   },
   "openingHoursSpecification": [
-    {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": "Monday",
-      "opens": "13:00",
-      "closes": "16:00"
-    },
-    {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": "Tuesday",
-      "opens": "13:00",
-      "closes": "18:00"
-    },
-    {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": "Wednesday",
-      "opens": "10:00",
-      "closes": "16:00"
-    },
-    {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": "Thursday",
-      "opens": "13:00",
-      "closes": "16:00"
-    },
-    {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": "Friday",
-      "opens": "10:00",
-      "closes": "15:00"
-    }
+    {"@type": "OpeningHoursSpecification", "dayOfWeek": "Monday", "opens": "13:00", "closes": "16:00"},
+    {"@type": "OpeningHoursSpecification", "dayOfWeek": "Tuesday", "opens": "13:00", "closes": "18:00"},
+    {"@type": "OpeningHoursSpecification", "dayOfWeek": "Wednesday", "opens": "10:00", "closes": "16:00"},
+    {"@type": "OpeningHoursSpecification", "dayOfWeek": "Thursday", "opens": "13:00", "closes": "16:00"},
+    {"@type": "OpeningHoursSpecification", "dayOfWeek": "Friday", "opens": "10:00", "closes": "15:00"}
   ],
+  "founder": {"@id": "https://www.tarieskin.dk/om-mig.html#fatima"},
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Behandlinger",
+    "itemListElement": [
+      {"@type": "Offer", "price": "565", "priceCurrency": "DKK", "itemOffered": {"@type": "Service", "name": "Klassisk ansigtsbehandling"}},
+      {"@type": "Offer", "price": "475", "priceCurrency": "DKK", "itemOffered": {"@type": "Service", "name": "Beroligende ansigtsbehandling"}},
+      {"@type": "Offer", "price": "765", "priceCurrency": "DKK", "itemOffered": {"@type": "Service", "name": "Komplet ansigtsbehandling"}},
+      {"@type": "Offer", "price": "525", "priceCurrency": "DKK", "itemOffered": {"@type": "Service", "name": "Dybderensende ansigtsbehandling"}},
+      {"@type": "Offer", "price": "680", "priceCurrency": "DKK", "itemOffered": {"@type": "Service", "name": "Microneedling", "url": "https://www.tarieskin.dk/microneedling.html"}},
+      {"@type": "Offer", "price": "485", "priceCurrency": "DKK", "itemOffered": {"@type": "Service", "name": "Diamantslibning"}},
+      {"@type": "Offer", "price": "395", "priceCurrency": "DKK", "itemOffered": {"@type": "Service", "name": "Rødt LED-lys ansigtsbehandling"}},
+      {"@type": "Offer", "price": "425", "priceCurrency": "DKK", "itemOffered": {"@type": "Service", "name": "Vippeløft og farvning"}},
+      {"@type": "Offer", "price": "165", "priceCurrency": "DKK", "itemOffered": {"@type": "Service", "name": "Vippefarvning"}},
+      {"@type": "Offer", "price": "165", "priceCurrency": "DKK", "itemOffered": {"@type": "Service", "name": "Brynfarvning"}}
+    ]
+  },
   "sameAs": [
-    "https://www.instagram.com/tarieskin/"
+    "https://www.instagram.com/tarieskin/",
+    "https://www.facebook.com/tarieskin"
   ]
 }
 </script>
@@ -104,8 +100,8 @@
 <section class="hero">
   <div class="hero__text">
     <p class="eyebrow">Skønhedsklinik</p>
-    <h1>Skønhed, der starter med <em class="accent">skøn hud</em></h1>
-    <p class="lead">Ansigtsbehandlinger, microneedling, red light-terapi og lash lift i bløde, rolige rammer. Alt tilpasset dig og din hud.</p>
+    <h1>Ansigtsbehandling i Greve for <em class="accent">sund, strålende hud</em></h1>
+    <p class="lead">Ansigtsbehandlinger, microneedling, LED-lysbehandling og vippeløft hos en autoriseret CIDESCO-hudterapeut. Hver behandling starter med en hudanalyse og tilpasses din hud.</p>
     <div class="hero__actions">
       <a class="btn" href="https://tarieskin.planway.com/" target="_blank" rel="noopener">Book tid</a>
       <a class="link-line" href="#behandlinger">Se behandlinger</a>
@@ -139,6 +135,22 @@
     <span>Ansigtsbehandlinger</span><span class="dot" aria-hidden="true"></span>
     <span>Avanceret hudpleje</span><span class="dot" aria-hidden="true"></span>
     <span>Vipper &amp; bryn</span>
+  </div>
+</section>
+
+<!-- Om klinikken -->
+<section class="wrap about-body" id="om-klinikken" style="padding-top: 96px; padding-bottom: 0;">
+  <dl class="facts-list">
+    <div><dt>Uddannelse</dt><dd>Autoriseret hudterapeut, Stockholm</dd></div>
+    <div><dt>Diplom</dt><dd>CIDESCO international diplom</dd></div>
+    <div><dt>Klinik</dt><dd>Strandby Have 41, Greve</dd></div>
+  </dl>
+  <div class="about-body__text">
+    <p class="eyebrow">Om klinikken</p>
+    <h2>Personlig hudpleje i Greve</h2>
+    <p>Tarieskin er en lille hudplejeklinik i Greve, hvor du altid bliver behandlet af mig, Fatima. Jeg er autoriseret hudterapeut uddannet i Stockholm med det internationale CIDESCO-diplom, og jeg har arbejdet som hudterapeut i Sverige, inden jeg åbnede min egen klinik i Danmark.</p>
+    <p>Alle behandlinger starter med en hudanalyse, så vi sammen kan vælge den behandling, din hud faktisk har brug for. Er en behandling ikke det rigtige for din hud, siger jeg det. Mine kunder kommer fra Greve og omegn, bl.a. Karlslunde, Mosede, Hundige og Tune.</p>
+    <a class="link-line" href="om-mig.html" style="align-self: flex-start;">Læs mere om mig</a>
   </div>
 </section>
 
@@ -179,7 +191,7 @@
           <h3>Avanceret hudpleje</h3>
           <p>Behandlinger, der forbedrer hudens struktur og giver en friskere og mere glødende hud.</p>
           <ul class="list">
-            <li><span class="dot dot--sm" aria-hidden="true"></span><span>Microneedling <span class="name-en-inline">· Collagen Induction Therapy</span></span></li>
+            <li><span class="dot dot--sm" aria-hidden="true"></span><span><a href="microneedling.html">Microneedling</a> <span class="name-en-inline">· Collagen Induction Therapy</span></span></li>
             <li><span class="dot dot--sm" aria-hidden="true"></span><span>Diamantslibning <span class="name-en-inline">· Diamond Microdermabrasion</span></span></li>
             <li><span class="dot dot--sm" aria-hidden="true"></span><span>Rødt LED-lys ansigtsbehandling <span class="name-en-inline">· LED Red Light Therapy Facial</span></span></li>
           </ul>
@@ -235,7 +247,7 @@
       </div>
       <p class="price-cat price-cat--next">Avanceret hudpleje</p>
       <div class="price-row">
-        <div class="price-row__name"><span class="price-row__title">Microneedling</span><span class="price-row__time">Collagen Induction Therapy · 60 min</span></div>
+        <div class="price-row__name"><span class="price-row__title"><a href="microneedling.html" style="text-decoration: none;">Microneedling</a></span><span class="price-row__time">Collagen Induction Therapy · 60 min</span></div>
         <span class="price-row__price">Fra 680 kr.</span>
       </div>
       <div class="price-row">
