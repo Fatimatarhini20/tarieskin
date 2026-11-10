@@ -1,6 +1,99 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://www.tarieskin.dk/</loc></url>
-  <url><loc>https://www.tarieskin.dk/behandlinger.html</loc></url>
-  <url><loc>https://www.tarieskin.dk/om-mig.html</loc></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://www.tarieskin.dk/</loc>
+    <xhtml:link rel="alternate" hreflang="da" href="https://www.tarieskin.dk/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tarieskin.dk/en/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://www.tarieskin.dk/sv/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.tarieskin.dk/ar/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.tarieskin.dk/"/>
+  </url>
+  <url>
+    <loc>https://www.tarieskin.dk/en/</loc>
+    <xhtml:link rel="alternate" hreflang="da" href="https://www.tarieskin.dk/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tarieskin.dk/en/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://www.tarieskin.dk/sv/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.tarieskin.dk/ar/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.tarieskin.dk/"/>
+  </url>
+  <url>
+    <loc>https://www.tarieskin.dk/sv/</loc>
+    <xhtml:link rel="alternate" hreflang="da" href="https://www.tarieskin.dk/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tarieskin.dk/en/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://www.tarieskin.dk/sv/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.tarieskin.dk/ar/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.tarieskin.dk/"/>
+  </url>
+  <url>
+    <loc>https://www.tarieskin.dk/ar/</loc>
+    <xhtml:link rel="alternate" hreflang="da" href="https://www.tarieskin.dk/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tarieskin.dk/en/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://www.tarieskin.dk/sv/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.tarieskin.dk/ar/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.tarieskin.dk/"/>
+  </url>
+  <url>
+    <loc>https://www.tarieskin.dk/behandlinger.html</loc>
+    <xhtml:link rel="alternate" hreflang="da" href="https://www.tarieskin.dk/behandlinger.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tarieskin.dk/en/behandlinger.html"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://www.tarieskin.dk/sv/behandlinger.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.tarieskin.dk/ar/behandlinger.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.tarieskin.dk/behandlinger.html"/>
+  </url>
+  <url>
+    <loc>https://www.tarieskin.dk/en/behandlinger.html</loc>
+    <xhtml:link rel="alternate" hreflang="da" href="https://www.tarieskin.dk/behandlinger.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tarieskin.dk/en/behandlinger.html"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://www.tarieskin.dk/sv/behandlinger.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.tarieskin.dk/ar/behandlinger.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.tarieskin.dk/behandlinger.html"/>
+  </url>
+  <url>
+    <loc>https://www.tarieskin.dk/sv/behandlinger.html</loc>
+    <xhtml:link rel="alternate" hreflang="da" href="https://www.tarieskin.dk/behandlinger.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tarieskin.dk/en/behandlinger.html"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://www.tarieskin.dk/sv/behandlinger.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.tarieskin.dk/ar/behandlinger.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.tarieskin.dk/behandlinger.html"/>
+  </url>
+  <url>
+    <loc>https://www.tarieskin.dk/ar/behandlinger.html</loc>
+    <xhtml:link rel="alternate" hreflang="da" href="https://www.tarieskin.dk/behandlinger.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tarieskin.dk/en/behandlinger.html"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://www.tarieskin.dk/sv/behandlinger.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.tarieskin.dk/ar/behandlinger.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.tarieskin.dk/behandlinger.html"/>
+  </url>
+  <url>
+    <loc>https://www.tarieskin.dk/om-mig.html</loc>
+    <xhtml:link rel="alternate" hreflang="da" href="https://www.tarieskin.dk/om-mig.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tarieskin.dk/en/om-mig.html"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://www.tarieskin.dk/sv/om-mig.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.tarieskin.dk/ar/om-mig.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.tarieskin.dk/om-mig.html"/>
+  </url>
+  <url>
+    <loc>https://www.tarieskin.dk/en/om-mig.html</loc>
+    <xhtml:link rel="alternate" hreflang="da" href="https://www.tarieskin.dk/om-mig.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tarieskin.dk/en/om-mig.html"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://www.tarieskin.dk/sv/om-mig.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.tarieskin.dk/ar/om-mig.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.tarieskin.dk/om-mig.html"/>
+  </url>
+  <url>
+    <loc>https://www.tarieskin.dk/sv/om-mig.html</loc>
+    <xhtml:link rel="alternate" hreflang="da" href="https://www.tarieskin.dk/om-mig.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tarieskin.dk/en/om-mig.html"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://www.tarieskin.dk/sv/om-mig.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.tarieskin.dk/ar/om-mig.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.tarieskin.dk/om-mig.html"/>
+  </url>
+  <url>
+    <loc>https://www.tarieskin.dk/ar/om-mig.html</loc>
+    <xhtml:link rel="alternate" hreflang="da" href="https://www.tarieskin.dk/om-mig.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.tarieskin.dk/en/om-mig.html"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://www.tarieskin.dk/sv/om-mig.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.tarieskin.dk/ar/om-mig.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.tarieskin.dk/om-mig.html"/>
+  </url>
 </urlset>
