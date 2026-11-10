@@ -546,3 +546,10 @@ em.accent { font-style: italic; color: var(--accent); }
 }
 
 @media (max-width: 800px) { .vision__cols { grid-template-columns: 1fr; } }
+
+/* Behandlingsbeskrivelser: lister */
+.checklist { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 8px 24px; }
+.checklist li { position: relative; padding-left: 18px; font-size: 17px; line-height: 1.5; color: var(--muted); }
+.checklist li::before { content: ""; position: absolute; left: 0; top: 0.65em; width: 6px; height: 6px; border-radius: 50%; background: var(--gold); }
+.detail .label { margin-bottom: 2px; }
+.note { font-size: 15px; line-height: 1.6; font-style: italic; color: var(--muted); border-left: 2px solid var(--gold); padding-left: 16px; }
