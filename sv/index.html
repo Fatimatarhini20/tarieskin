@@ -203,7 +203,31 @@
 </section>
 </main>
 
-<section class="wrap contact" id="kontakt">
+<section class="wrap form-section" id="kontakt">
+  <div class="form-card">
+    <div class="form-card__intro">
+      <p class="eyebrow">Kontakt</p>
+      <h2>Skicka ett meddelande</h2>
+      <p class="text">Har du frågor om en behandling eller din hud? Skriv till oss så återkommer vi så snart som möjligt.</p>
+    </div>
+    <form class="form" id="contact-form" action="https://api.web3forms.com/submit" method="POST" data-ok="Tack för ditt meddelande! Vi återkommer så snart som möjligt." data-err="Något gick fel. Försök igen eller skriv direkt till Fatima.tarhini@hotmail.com." data-sending="Skickar…">
+      <input type="hidden" name="access_key" value="DIN_WEB3FORMS_NOEGLE">
+      <input type="hidden" name="subject" value="Ny förfrågan från tarieskin.dk">
+      <input type="hidden" name="from_name" value="Tarie Skin – hjemmeside">
+      <input type="checkbox" name="botcheck" class="form__trap" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <div class="form__row">
+        <label class="field"><span>Namn</span><input type="text" name="name" required autocomplete="name"></label>
+        <label class="field"><span>E-post</span><input type="email" name="email" required autocomplete="email"></label>
+      </div>
+      <label class="field"><span>Telefon (valfritt)</span><input type="tel" name="phone" autocomplete="tel"></label>
+      <label class="field"><span>Ditt meddelande</span><textarea name="message" rows="5" required placeholder="Skriv ditt meddelande här"></textarea></label>
+      <label class="consent"><input type="checkbox" name="consent" required><span>Jag godkänner att mina uppgifter används för att besvara min förfrågan.</span></label>
+      <div class="form__actions"><button class="btn btn--medium" type="submit">Skicka meddelande</button><p class="form__status" role="status" aria-live="polite"></p></div>
+    </form>
+  </div>
+</section>
+
+<section class="wrap contact" id="book">
   <div class="contact__box">
     <div class="contact__main">
       <img src="../assets/logo-light.png" alt="Tarieskin monogram">
@@ -242,5 +266,12 @@
   <span>© 2026 Tarieskin. Alla rättigheter förbehållna.</span>
 </footer>
 
+<script>
+(function(){var f=document.getElementById('contact-form');if(!f)return;var s=f.querySelector('.form__status'),b=f.querySelector('button');
+f.addEventListener('submit',function(e){e.preventDefault();s.className='form__status';s.textContent=f.dataset.sending;b.disabled=true;
+fetch(f.action,{method:'POST',headers:{'Accept':'application/json'},body:new FormData(f)}).then(function(r){return r.json()}).then(function(d){
+if(d&&d.success){f.reset();s.textContent=f.dataset.ok;s.className='form__status is-ok';}else{throw new Error('x')}
+}).catch(function(){s.textContent=f.dataset.err;s.className='form__status is-err';}).then(function(){b.disabled=false;});});})();
+</script>
 </body>
 </html>

@@ -219,7 +219,31 @@
 
 </main>
 
-<section class="wrap contact contact--tight" id="kontakt">
+<section class="wrap form-section" id="kontakt">
+  <div class="form-card">
+    <div class="form-card__intro">
+      <p class="eyebrow">تواصلي معنا</p>
+      <h2>أرسلي رسالة</h2>
+      <p class="text">هل لديك أسئلة حول علاج أو بشرتك؟ اكتبي لنا وسنردّ عليك في أقرب وقت ممكن.</p>
+    </div>
+    <form class="form" id="contact-form" action="https://api.web3forms.com/submit" method="POST" data-ok="شكرًا على رسالتك! سنردّ عليك في أقرب وقت ممكن." data-err="حدث خطأ ما. حاولي مرة أخرى أو راسلي مباشرة Fatima.tarhini@hotmail.com." data-sending="جارٍ الإرسال…">
+      <input type="hidden" name="access_key" value="DIN_WEB3FORMS_NOEGLE">
+      <input type="hidden" name="subject" value="استفسار جديد من tarieskin.dk">
+      <input type="hidden" name="from_name" value="Tarie Skin – hjemmeside">
+      <input type="checkbox" name="botcheck" class="form__trap" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <div class="form__row">
+        <label class="field"><span>الاسم</span><input type="text" name="name" required autocomplete="name"></label>
+        <label class="field"><span>البريد الإلكتروني</span><input type="email" name="email" required autocomplete="email"></label>
+      </div>
+      <label class="field"><span>الهاتف (اختياري)</span><input type="tel" name="phone" autocomplete="tel"></label>
+      <label class="field"><span>رسالتك</span><textarea name="message" rows="5" required placeholder="اكتبي رسالتك هنا"></textarea></label>
+      <label class="consent"><input type="checkbox" name="consent" required><span>أوافق على استخدام بياناتي للرد على استفساري.</span></label>
+      <div class="form__actions"><button class="btn btn--medium" type="submit">إرسال الرسالة</button><p class="form__status" role="status" aria-live="polite"></p></div>
+    </form>
+  </div>
+</section>
+
+<section class="wrap contact contact--tight" id="book">
   <div class="contact__box">
     <div class="contact__main">
       <img src="../assets/logo-light.png" alt="Tarieskin monogram">
@@ -258,5 +282,12 @@
   <span>© 2026 Tarieskin. جميع الحقوق محفوظة.</span>
 </footer>
 
+<script>
+(function(){var f=document.getElementById('contact-form');if(!f)return;var s=f.querySelector('.form__status'),b=f.querySelector('button');
+f.addEventListener('submit',function(e){e.preventDefault();s.className='form__status';s.textContent=f.dataset.sending;b.disabled=true;
+fetch(f.action,{method:'POST',headers:{'Accept':'application/json'},body:new FormData(f)}).then(function(r){return r.json()}).then(function(d){
+if(d&&d.success){f.reset();s.textContent=f.dataset.ok;s.className='form__status is-ok';}else{throw new Error('x')}
+}).catch(function(){s.textContent=f.dataset.err;s.className='form__status is-err';}).then(function(){b.disabled=false;});});})();
+</script>
 </body>
 </html>
