@@ -613,3 +613,7 @@ html[lang="ar"] .name-en, html[lang="ar"] .name-en-inline, html[lang="ar"] .pric
   .form-card { padding: 36px 22px; border-radius: 32px; }
 }
 html[lang="ar"] .field > span { letter-spacing: 0; text-transform: none; }
+
+.details__cvr { display: flex; align-items: baseline; gap: 10px; padding-top: 20px; margin-top: -6px; border-top: 1px solid rgba(225, 200, 170, 0.25); }
+.details .details__cvr dt { font-size: 11px; letter-spacing: 0.16em; }
+.details .details__cvr dd { margin: 0; font-size: 14px; color: var(--on-dark-muted); font-variant-numeric: tabular-nums; }
