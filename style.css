@@ -95,8 +95,8 @@ em.accent { font-style: italic; color: var(--accent); }
 .btn:hover { color: var(--white); background: #52403A; }
 .btn--small { padding: 13px 26px; font-size: 16px; }
 .btn--medium { padding: 16px 30px; font-size: 17px; }
-.btn--light { background: var(--button-light); color: var(--ink); }
-.btn--light:hover { color: var(--ink); background: #E4CFB6; }
+.btn--light { background: var(--ink); color: var(--white); }
+.btn--light:hover { color: var(--white); background: #52403A; }
 
 .link-line {
   display: inline-block;
@@ -318,8 +318,10 @@ em.accent { font-style: italic; color: var(--accent); }
 .contact--tight { padding-top: 64px; }
 
 .contact__box {
-  background: var(--ink);
-  color: var(--on-dark);
+  background: var(--white);
+  color: var(--ink);
+  border: 1px solid var(--card-line);
+  box-shadow: 0 24px 50px -34px rgba(58, 43, 37, 0.35);
   border-radius: 40px;
   padding: 72px 56px;
   display: flex;
@@ -329,8 +331,8 @@ em.accent { font-style: italic; color: var(--accent); }
 }
 .contact__main { flex: 1 1 320px; min-width: 0; display: flex; flex-direction: column; align-items: flex-start; gap: 24px; }
 .contact__main img { height: 84px; width: auto; display: block; }
-.contact__main h2 { font-size: clamp(38px, 5vw, 58px); line-height: 1; color: var(--white); }
-.contact__main p { font-size: 18px; line-height: 1.65; color: var(--on-dark-muted); }
+.contact__main h2 { font-size: clamp(38px, 5vw, 58px); line-height: 1; color: var(--ink); }
+.contact__main p { font-size: 18px; line-height: 1.65; color: var(--muted); }
 
 .details { flex: 1 1 280px; min-width: 0; margin: 0; display: flex; flex-direction: column; gap: 26px; font-size: 18px; }
 .details dt {
@@ -338,7 +340,7 @@ em.accent { font-style: italic; color: var(--accent); }
   font-weight: 700;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: var(--on-dark-label);
+  color: var(--accent);
 }
 .details dd { margin: 8px 0 0; }
 
@@ -382,10 +384,10 @@ em.accent { font-style: italic; color: var(--accent); }
 .price-cat { margin: 0 0 4px; font-size: 13px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: var(--accent); }
 .price-cat--next { margin-top: 40px; }
 
-.details a { color: var(--on-dark); text-decoration: none; overflow-wrap: anywhere; }
+.details a { color: var(--ink); text-decoration: none; overflow-wrap: anywhere; }
 .hours { display: flex; flex-direction: column; gap: 6px; font-size: 17px; font-variant-numeric: tabular-nums; max-width: 340px; }
 .hours div { display: flex; justify-content: space-between; gap: 24px; }
-.hours .is-closed { color: var(--on-dark-label); }
+.hours .is-closed { color: var(--accent); }
 .social { display: flex; flex-wrap: wrap; gap: 12px 28px; }
 .social a { display: inline-flex; align-items: center; gap: 12px; }
 
