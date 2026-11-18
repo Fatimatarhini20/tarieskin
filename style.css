@@ -188,9 +188,9 @@ em.accent { font-style: italic; color: var(--accent); }
 
 .arch {
   position: relative;
-  width: 420px;
+  width: 330px;
   max-width: 100%;
-  height: 560px;
+  aspect-ratio: 420 / 480;
 }
 .arch svg { position: absolute; inset: 0; width: 100%; height: 100%; }
 .arch__logo {
@@ -199,9 +199,8 @@ em.accent { font-style: italic; color: var(--accent); }
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 110px;
 }
-.arch__logo img { height: 44%; max-width: 60%; width: auto; object-fit: contain; }
+.arch__logo img { height: 30%; max-width: 60%; width: auto; object-fit: contain; }
 .arch__badge {
   position: absolute;
   inset-inline-end: 4%;
@@ -318,9 +317,9 @@ em.accent { font-style: italic; color: var(--accent); }
 .contact--tight { padding-top: 64px; }
 
 .contact__box {
-  background: var(--white);
+  background: #FAF1E6;
   color: var(--ink);
-  border: 1px solid var(--card-line);
+  border: 1px solid #DCC3A5;
   box-shadow: 0 24px 50px -34px rgba(58, 43, 37, 0.35);
   border-radius: 40px;
   padding: 72px 56px;
@@ -329,18 +328,18 @@ em.accent { font-style: italic; color: var(--accent); }
   align-items: center;
   gap: 48px 72px;
 }
-.contact__main { flex: 1 1 320px; min-width: 0; display: flex; flex-direction: column; align-items: flex-start; gap: 24px; }
-.contact__main img { height: 84px; width: auto; display: block; }
+.contact__main { align-self: flex-start; flex: 1 1 320px; min-width: 0; display: flex; flex-direction: column; align-items: flex-start; gap: 24px; }
+.contact__main img { height: 124px; width: auto; display: block; }
 .contact__main h2 { font-size: clamp(38px, 5vw, 58px); line-height: 1; color: var(--ink); }
 .contact__main p { font-size: 18px; line-height: 1.65; color: var(--muted); }
 
-.details { flex: 1 1 280px; min-width: 0; margin: 0; display: flex; flex-direction: column; gap: 26px; font-size: 18px; }
+.details { flex: 1 1 280px; min-width: 0; margin: 0; display: flex; flex-direction: column; gap: 26px; font-size: 18px; background: var(--ink); color: var(--on-dark); border-radius: 28px; padding: 36px 40px; }
 .details dt {
   font-size: 13px;
   font-weight: 700;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: var(--accent);
+  color: var(--on-dark-label);
 }
 .details dd { margin: 8px 0 0; }
 
@@ -384,10 +383,10 @@ em.accent { font-style: italic; color: var(--accent); }
 .price-cat { margin: 0 0 4px; font-size: 13px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: var(--accent); }
 .price-cat--next { margin-top: 40px; }
 
-.details a { color: var(--ink); text-decoration: none; overflow-wrap: anywhere; }
+.details a { color: var(--on-dark); text-decoration: none; overflow-wrap: anywhere; }
 .hours { display: flex; flex-direction: column; gap: 6px; font-size: 17px; font-variant-numeric: tabular-nums; max-width: 340px; }
 .hours div { display: flex; justify-content: space-between; gap: 24px; }
-.hours .is-closed { color: var(--accent); }
+.hours .is-closed { color: var(--on-dark-label); }
 .social { display: flex; flex-wrap: wrap; gap: 12px 28px; }
 .social a { display: inline-flex; align-items: center; gap: 12px; }
 
@@ -527,11 +526,11 @@ em.accent { font-style: italic; color: var(--accent); }
   .brand__name { font-size: 19px; letter-spacing: 0.2em; }
   .brand img { height: 44px; }
   .hero { padding-bottom: 64px; gap: 40px; }
-  .arch { height: 480px; }
   .treatments { padding-top: 72px; padding-bottom: 64px; }
   .prices { padding: 64px 0; }
   .contact { padding-top: 64px; padding-bottom: 64px; }
-  .contact__box { padding: 48px 28px; border-radius: 32px; }
+  .contact__box { padding: 28px 20px; border-radius: 32px; }
+  .details { padding: 28px 24px; }
   .band__inner { font-size: 24px; }
   .frame { height: 420px; }
   .media { height: 200px; }
@@ -577,8 +576,8 @@ html[lang="ar"] .name-en, html[lang="ar"] .name-en-inline, html[lang="ar"] .pric
 /* ---------- Kontaktformular ---------- */
 .form-section { padding-top: 96px; padding-bottom: 0; }
 .form-card {
-  background: var(--white);
-  border: 1px solid var(--card-line);
+  background: #FAF1E6;
+  border: 1px solid #DCC3A5;
   border-radius: 40px;
   padding: 64px 56px;
   display: flex;
@@ -595,7 +594,7 @@ html[lang="ar"] .name-en, html[lang="ar"] .name-en-inline, html[lang="ar"] .pric
 .field > span { font-size: 13px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: var(--accent); }
 .field input, .field textarea {
   font: inherit; font-size: 17px; color: var(--ink);
-  background: var(--bg); border: 1px solid var(--line); border-radius: 16px;
+  background: var(--white); border: 1px solid #D4B896; border-radius: 16px;
   padding: 15px 18px; width: 100%;
 }
 .field textarea { resize: vertical; min-height: 140px; line-height: 1.5; }
