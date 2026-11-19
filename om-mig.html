@@ -171,5 +171,7 @@ fetch(f.action,{method:'POST',headers:{'Accept':'application/json'},body:new For
 if(d&&d.success){f.reset();s.textContent=f.dataset.ok;s.className='form__status is-ok';}else{throw new Error('x')}
 }).catch(function(){s.textContent=f.dataset.err;s.className='form__status is-err';}).then(function(){b.disabled=false;});});})();
 </script>
+<dialog id="policy-dialog" class="policy-dialog" aria-labelledby="policy-title"><div class="policy-dialog__box"><h2 id="policy-title">Retningslinjer for booking</h2><div class="policy policy--plain"><ul><li>Mød venligst til tiden til din behandling.</li><li>Giv venligst besked senest 24 timer før, hvis du skal aflyse eller flytte din tid.</li><li>Sen aflysning og udeblivelse kan medføre et gebyr.</li><li>Fortæl mig venligst om eventuelle allergier, hudproblemer, medicin eller nylige behandlinger.</li><li>Tilkøb under en behandling afregnes separat.</li></ul><p class="policy__thanks">Tak 🤍</p></div><button type="button" class="btn btn--small policy-dialog__close" data-policy-close>Luk</button></div></dialog>
+<script>(function(){var d=document.getElementById("policy-dialog");if(!d)return;document.addEventListener("click",function(e){var t=e.target;if(t.closest("[data-policy]")){e.preventDefault();if(d.showModal){d.showModal();}else{d.setAttribute("open","");}}else if(t.closest("[data-policy-close]")||t===d){d.close();}});})();</script>
 </body>
 </html>

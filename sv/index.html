@@ -52,7 +52,7 @@
     <h1>Skönhet som börjar med <em class="accent">vacker hud</em></h1>
     <p class="lead">Ansiktsbehandlingar, microneedling, rödljusterapi och fransliftning i mjuka, lugna miljöer. Allt anpassat efter dig och din hud.</p>
     <div class="hero__actions">
-      <a class="btn" href="https://tarieskin.planway.com/" target="_blank" rel="noopener">Boka tid</a>
+      <span class="book-row"><a class="btn" href="https://tarieskin.planway.com/" target="_blank" rel="noopener">Boka tid</a><button type="button" class="policy-btn" data-policy>Bokningspolicy</button></span>
       <a class="link-line" href="#behandlinger">Se behandlingar</a>
     </div>
   </div>
@@ -230,7 +230,7 @@
       <p class="eyebrow">Priser</p>
       <h2>Priser och tid</h2>
       <p class="text">Vägledande priser och tid för alla våra behandlingar. Det exakta priset visas vid bokning.</p>
-      <div><a class="btn" href="https://tarieskin.planway.com/" target="_blank" rel="noopener">Boka tid</a></div>
+      <div><span class="book-row"><a class="btn" href="https://tarieskin.planway.com/" target="_blank" rel="noopener">Boka tid</a><button type="button" class="policy-btn" data-policy>Bokningspolicy</button></span></div>
     </div>
     <div class="price-list">
       <p class="price-cat">Ansiktsbehandlingar</p>
@@ -356,5 +356,7 @@ fetch(f.action,{method:'POST',headers:{'Accept':'application/json'},body:new For
 if(d&&d.success){f.reset();s.textContent=f.dataset.ok;s.className='form__status is-ok';}else{throw new Error('x')}
 }).catch(function(){s.textContent=f.dataset.err;s.className='form__status is-err';}).then(function(){b.disabled=false;});});})();
 </script>
+<dialog id="policy-dialog" class="policy-dialog" aria-labelledby="policy-title"><div class="policy-dialog__box"><h2 id="policy-title">Bokningspolicy</h2><div class="policy policy--plain"><ul><li>Var vänlig kom i tid till din behandling.</li><li>Avboka eller boka om senast 24 timmar innan.</li><li>Sen avbokning och uteblivande kan medföra en avgift.</li><li>Berätta gärna om eventuella allergier, hudproblem, mediciner eller nyligen genomförda behandlingar.</li><li>Tillägg under en behandling debiteras separat.</li></ul><p class="policy__thanks">Tack 🤍</p></div><button type="button" class="btn btn--small policy-dialog__close" data-policy-close>Stäng</button></div></dialog>
+<script>(function(){var d=document.getElementById("policy-dialog");if(!d)return;document.addEventListener("click",function(e){var t=e.target;if(t.closest("[data-policy]")){e.preventDefault();if(d.showModal){d.showModal();}else{d.setAttribute("open","");}}else if(t.closest("[data-policy-close]")||t===d){d.close();}});})();</script>
 </body>
 </html>

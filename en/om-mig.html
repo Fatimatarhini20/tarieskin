@@ -165,5 +165,7 @@ fetch(f.action,{method:'POST',headers:{'Accept':'application/json'},body:new For
 if(d&&d.success){f.reset();s.textContent=f.dataset.ok;s.className='form__status is-ok';}else{throw new Error('x')}
 }).catch(function(){s.textContent=f.dataset.err;s.className='form__status is-err';}).then(function(){b.disabled=false;});});})();
 </script>
+<dialog id="policy-dialog" class="policy-dialog" aria-labelledby="policy-title"><div class="policy-dialog__box"><h2 id="policy-title">Booking policies</h2><div class="policy policy--plain"><ul><li>Please arrive on time for your treatment.</li><li>Kindly give 24 hours’ notice for cancellations or rescheduling.</li><li>Late cancellations and no-shows may be charged a fee.</li><li>Please let me know about any allergies, skin concerns, medications or recent treatments.</li><li>Add-ons during a treatment are charged separately.</li></ul><p class="policy__thanks">Thank you 🤍</p></div><button type="button" class="btn btn--small policy-dialog__close" data-policy-close>Close</button></div></dialog>
+<script>(function(){var d=document.getElementById("policy-dialog");if(!d)return;document.addEventListener("click",function(e){var t=e.target;if(t.closest("[data-policy]")){e.preventDefault();if(d.showModal){d.showModal();}else{d.setAttribute("open","");}}else if(t.closest("[data-policy-close]")||t===d){d.close();}});})();</script>
 </body>
 </html>

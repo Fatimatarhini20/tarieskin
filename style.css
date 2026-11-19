@@ -625,3 +625,13 @@ html[lang="ar"] .field > span { letter-spacing: 0; text-transform: none; }
 .policy li { position: relative; padding-inline-start: 20px; font-size: 15.5px; line-height: 1.55; color: var(--muted); }
 .policy li::before { content: ""; position: absolute; inset-inline-start: 0; top: 0.62em; width: 6px; height: 6px; border-radius: 50%; background: #B58B5E; }
 .policy__thanks { margin: 14px 0 0; font-size: 15.5px; color: var(--ink); }
+
+/* Retningslinjer-knap ved Book tid + popup */
+.book-row { display: inline-flex; flex-wrap: wrap; align-items: center; gap: 10px 22px; }
+.policy-btn { font: inherit; font-size: 15px; font-weight: 700; color: var(--ink); background: none; border: 0; border-bottom: 2px solid var(--gold); padding: 4px 0; cursor: pointer; }
+.policy-btn:hover { color: #7A5A3C; }
+.policy-dialog { border: 1px solid #DCC3A5; border-radius: 32px; padding: 0; background: #FAF1E6; color: var(--ink); max-width: min(560px, calc(100vw - 32px)); width: 100%; box-shadow: 0 30px 80px -20px rgba(58, 43, 37, 0.5); }
+.policy-dialog::backdrop { background: rgba(58, 43, 37, 0.55); }
+.policy-dialog__box { padding: 40px 36px 32px; display: flex; flex-direction: column; gap: 20px; align-items: flex-start; }
+.policy-dialog__box h2 { font-size: 34px; line-height: 1.1; }
+.policy--plain { margin: 0; padding: 0; border: 0; }

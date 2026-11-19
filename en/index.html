@@ -52,7 +52,7 @@
     <h1>Beauty that starts with <em class="accent">beautiful skin</em></h1>
     <p class="lead">Facials, microneedling, red light therapy and lash lift in soft, calm surroundings. Everything tailored to you and your skin.</p>
     <div class="hero__actions">
-      <a class="btn" href="https://tarieskin.planway.com/" target="_blank" rel="noopener">Book now</a>
+      <span class="book-row"><a class="btn" href="https://tarieskin.planway.com/" target="_blank" rel="noopener">Book now</a><button type="button" class="policy-btn" data-policy>Booking policies</button></span>
       <a class="link-line" href="#behandlinger">See treatments</a>
     </div>
   </div>
@@ -230,7 +230,7 @@
       <p class="eyebrow">Prices</p>
       <h2>Prices and duration</h2>
       <p class="text">Guide prices and duration for all our treatments. The exact price is shown when you book.</p>
-      <div><a class="btn" href="https://tarieskin.planway.com/" target="_blank" rel="noopener">Book now</a></div>
+      <div><span class="book-row"><a class="btn" href="https://tarieskin.planway.com/" target="_blank" rel="noopener">Book now</a><button type="button" class="policy-btn" data-policy>Booking policies</button></span></div>
     </div>
     <div class="price-list">
       <p class="price-cat">Facials</p>
@@ -356,5 +356,7 @@ fetch(f.action,{method:'POST',headers:{'Accept':'application/json'},body:new For
 if(d&&d.success){f.reset();s.textContent=f.dataset.ok;s.className='form__status is-ok';}else{throw new Error('x')}
 }).catch(function(){s.textContent=f.dataset.err;s.className='form__status is-err';}).then(function(){b.disabled=false;});});})();
 </script>
+<dialog id="policy-dialog" class="policy-dialog" aria-labelledby="policy-title"><div class="policy-dialog__box"><h2 id="policy-title">Booking policies</h2><div class="policy policy--plain"><ul><li>Please arrive on time for your treatment.</li><li>Kindly give 24 hours’ notice for cancellations or rescheduling.</li><li>Late cancellations and no-shows may be charged a fee.</li><li>Please let me know about any allergies, skin concerns, medications or recent treatments.</li><li>Add-ons during a treatment are charged separately.</li></ul><p class="policy__thanks">Thank you 🤍</p></div><button type="button" class="btn btn--small policy-dialog__close" data-policy-close>Close</button></div></dialog>
+<script>(function(){var d=document.getElementById("policy-dialog");if(!d)return;document.addEventListener("click",function(e){var t=e.target;if(t.closest("[data-policy]")){e.preventDefault();if(d.showModal){d.showModal();}else{d.setAttribute("open","");}}else if(t.closest("[data-policy-close]")||t===d){d.close();}});})();</script>
 </body>
 </html>
