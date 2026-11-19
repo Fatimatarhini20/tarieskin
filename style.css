@@ -617,3 +617,11 @@ html[lang="ar"] .field > span { letter-spacing: 0; text-transform: none; }
 .details__cvr { display: flex; align-items: baseline; gap: 10px; padding-top: 20px; margin-top: -6px; border-top: 1px solid rgba(225, 200, 170, 0.25); }
 .details .details__cvr dt { font-size: 11px; letter-spacing: 0.16em; }
 .details .details__cvr dd { margin: 0; font-size: 14px; color: var(--on-dark-muted); font-variant-numeric: tabular-nums; }
+
+/* Retningslinjer under Book tid */
+.policy { margin-top: 12px; padding-top: 28px; border-top: 1px solid #DCC3A5; width: 100%; }
+.policy h3 { font-family: inherit; font-size: 13px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #7A5A3C; margin: 0 0 14px; }
+.policy ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 10px; }
+.policy li { position: relative; padding-inline-start: 20px; font-size: 15.5px; line-height: 1.55; color: var(--muted); }
+.policy li::before { content: ""; position: absolute; inset-inline-start: 0; top: 0.62em; width: 6px; height: 6px; border-radius: 50%; background: #B58B5E; }
+.policy__thanks { margin: 14px 0 0; font-size: 15.5px; color: var(--ink); }
