@@ -53,7 +53,7 @@
     <h1>جمال يبدأ مع <em class="accent">بشرة جميلة</em></h1>
     <p class="lead">عناية بالوجه، ميكرونيدلينغ، العلاج بالضوء الأحمر ورفع الرموش في أجواء ناعمة وهادئة. كل شيء مصمَّم خصيصًا لك ولبشرتك.</p>
     <div class="hero__actions">
-      <a class="btn" href="https://tarieskin.planway.com/" target="_blank" rel="noopener">احجز موعدك</a>
+      <span class="book-row"><a class="btn" href="https://tarieskin.planway.com/" target="_blank" rel="noopener">احجز موعدك</a><button type="button" class="policy-btn" data-policy>سياسة الحجز</button></span>
       <a class="link-line" href="#behandlinger">عرض العلاجات</a>
     </div>
   </div>
@@ -231,7 +231,7 @@
       <p class="eyebrow">الأسعار</p>
       <h2>الأسعار والمدة</h2>
       <p class="text">أسعار استرشادية ومدة جميع علاجاتنا. يظهر السعر الدقيق عند الحجز.</p>
-      <div><a class="btn" href="https://tarieskin.planway.com/" target="_blank" rel="noopener">احجز موعدك</a></div>
+      <div><span class="book-row"><a class="btn" href="https://tarieskin.planway.com/" target="_blank" rel="noopener">احجز موعدك</a><button type="button" class="policy-btn" data-policy>سياسة الحجز</button></span></div>
     </div>
     <div class="price-list">
       <p class="price-cat">العناية بالوجه</p>
@@ -357,5 +357,7 @@ fetch(f.action,{method:'POST',headers:{'Accept':'application/json'},body:new For
 if(d&&d.success){f.reset();s.textContent=f.dataset.ok;s.className='form__status is-ok';}else{throw new Error('x')}
 }).catch(function(){s.textContent=f.dataset.err;s.className='form__status is-err';}).then(function(){b.disabled=false;});});})();
 </script>
+<dialog id="policy-dialog" class="policy-dialog" aria-labelledby="policy-title"><div class="policy-dialog__box"><h2 id="policy-title">سياسة الحجز</h2><div class="policy policy--plain"><ul><li>يرجى الحضور في الموعد المحدد لجلسة العلاج.</li><li>يرجى إبلاغي قبل 24 ساعة على الأقل عند الإلغاء أو تغيير الموعد.</li><li>قد يتم تحصيل رسوم عن الإلغاء المتأخر أو عدم الحضور.</li><li>يرجى إبلاغي بأي حساسية أو مشاكل جلدية أو أدوية أو علاجات حديثة.</li><li>تُحتسب الإضافات أثناء العلاج بشكل منفصل.</li></ul><p class="policy__thanks">شكراً لك 🤍</p></div><button type="button" class="btn btn--small policy-dialog__close" data-policy-close>إغلاق</button></div></dialog>
+<script>(function(){var d=document.getElementById("policy-dialog");if(!d)return;document.addEventListener("click",function(e){var t=e.target;if(t.closest("[data-policy]")){e.preventDefault();if(d.showModal){d.showModal();}else{d.setAttribute("open","");}}else if(t.closest("[data-policy-close]")||t===d){d.close();}});})();</script>
 </body>
 </html>
